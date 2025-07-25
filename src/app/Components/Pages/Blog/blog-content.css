@@ -1,0 +1,79 @@
+.blog-content {
+  font-family: var(--font-merriweather), sans-serif;
+  color: #5f7161;
+  line-height: 1.75;
+  /* font-size: 20px;
+  font-weight: 500; */
+}
+
+.blog-content p {
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+  /* font-weight: 500;  */
+}
+
+.blog-content h2 {
+  font-size: 1.875rem; /* Tailwind text-3xl */
+  font-weight: 700;
+  color: #5f7161;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blog-content h3 {
+  font-size: 1.5rem; /* Tailwind text-2xl */
+  font-weight: 600;
+  color: #5f7161;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-content pre {
+  background-color: #1f2937; /* Tailwind gray-900 */
+  color: #d1d5db; /* Tailwind gray-300 */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 0.875rem;
+  overflow-x: auto;
+  border: 1px solid rgba(95, 113, 97, 0.3);
+  margin: 1.5rem 0;
+}
+
+.blog-content code {
+  font-size: 0.95rem;
+}
+
+/* Remove background from inline code in code blocks */
+/* .blog-content pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+} */
+
+/* Optional: style blockquote */
+.blog-content blockquote {
+  border-left: 4px solid #d0c9c0;
+  padding-left: 1rem;
+  color: #5f7161;
+  font-style: italic;
+  margin: 2rem 0;
+}
+
+/* Optional: images inside markdown */
+.blog-content img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(208, 201, 192, 0.3); /* border-[#D0C9C0]/30 */
+}
+
+.blog-content figcaption,
+.blog-content p + img + p {
+  text-align: center;
+  font-size: 0.875rem;
+  color: rgba(95, 113, 97, 0.6);
+  margin-top: 0.5rem;
+}
