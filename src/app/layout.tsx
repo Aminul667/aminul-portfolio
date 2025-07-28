@@ -12,14 +12,14 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Chen - Creative Developer",
+  title: "Aminul - Fullstack Developer",
   description:
-    "Creative developer portfolio showcasing the art of coding through beautiful, functional web experiences.",
+    "Fullstack developer portfolio showcasing the art of coding through beautiful, functional web experiences.",
   keywords: [
-    "creative developer",
+    "Fullstack developer",
     "web development",
-    "UI/UX",
     "frontend",
+    "backend",
     "portfolio",
   ],
 };
