@@ -103,7 +103,7 @@ export default function Home() {
             {/* Project 1 - Large Left */}
             <div className="grid md:grid-cols-3 gap-8 items-center">
               <div className="md:col-span-2">
-                <Card className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-1 bg-white/90 backdrop-blur-sm">
+                <Card className="p-0 p-0 group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-1 bg-white/90 backdrop-blur-sm">
                   <div className="relative overflow-hidden">
                     <Image
                       src="https://plus.unsplash.com/premium_photo-1683288662019-c92caea8276d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -171,7 +171,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="md:col-span-2 md:order-2">
-                <Card className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-1 bg-white/90 backdrop-blur-sm">
+                <Card className="p-0 group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-1 bg-white/90 backdrop-blur-sm">
                   <div className="relative overflow-hidden">
                     <Image
                       src="https://images.unsplash.com/photo-1525513688408-aef73a11a340?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -196,7 +196,7 @@ export default function Home() {
 
             {/* Project 3 - Centered */}
             <div className="max-w-4xl mx-auto">
-              <Card className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-1 bg-white/90 backdrop-blur-sm">
+              <Card className="p-0 group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-1 bg-white/90 backdrop-blur-sm">
                 <div className="grid md:grid-cols-2 gap-0">
                   <div className="relative overflow-hidden">
                     <Image

@@ -20,6 +20,8 @@ export function NavigationProvider({ children }: { children: ReactNode }) {
     if (path === "/work" || path.startsWith("/work")) return "work";
     if (path === "/about") return "about";
     if (path === "/contact") return "contact";
+    if (path === "/blog") return "blog";
+
     return "home";
   };
 
