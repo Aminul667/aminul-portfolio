@@ -8,8 +8,6 @@ const BlogPage = () => {
   const featuredArticles = articles.filter((article) => article.featured);
   const regularArticles = articles.filter((article) => !article.featured);
 
-  console.log("featuredArticles", featuredArticles);
-  console.log("regularArticles", regularArticles);
   return (
     <div className="min-h-screen bg-gradient-to-br from-stone-50 via-green-50/30 to-sage-50 relative overflow-hidden">
       {/* Animated Background Elements */}
