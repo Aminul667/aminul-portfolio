@@ -17,10 +17,11 @@ export function NavigationProvider({ children }: { children: ReactNode }) {
   // Map pathname to section
   const getActiveSection = (path: string) => {
     if (path === "/") return "home";
+    if (path === "/experience") return "experience";
     if (path === "/work" || path.startsWith("/work")) return "work";
     if (path === "/about") return "about";
     if (path === "/contact") return "contact";
-    if (path === "/blog") return "blog";
+    if (path.includes("/blog")) return "blog";
 
     return "home";
   };

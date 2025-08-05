@@ -73,15 +73,15 @@ npx shadcn-ui@latest add input label checkbox select
 
 Once initialized, you'll get:
 
-<pre> 
-components/ 
+```plaintext
+components/
 └── app-form/
-    ├── app-input-field.tsx 
-    ├── app-select.tsx 
-    ├── app-checkbox.tsx 
-    ├── app-image-upload.tsx 
+    ├── app-input-field.tsx
+    ├── app-select.tsx
+    ├── app-checkbox.tsx
+    ├── app-image-upload.tsx
     └── app-form.tsx
-</pre>
+```
 
 These are modular, reusable, typed form components ready for integration.
 

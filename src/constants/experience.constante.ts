@@ -1,0 +1,145 @@
+export const experiences = [
+  {
+    id: 1,
+    type: "work",
+    company: "Verv",
+    position: "Full-stack Developer",
+    location: "Highbury Corner, N5 1RA, London , UK",
+    period: "Dec 2024 - Present",
+    duration: "1+ years",
+    description:
+      "As a full-stack Developer, I am responsible for designing, developing, and optimizing scalable web applications, ensuring seamless data management, and collaborating with cross-functional teams to enhance system performance and user experience.",
+    achievements: [
+      "Develop and maintain scalable frontend components using frameworks like React.js and Next.js.",
+      "Build and manage robust backend systems using Node.js or Python (Django, FastAPI).",
+      "Design and implement RESTful APIs and/or GraphQL endpoints.",
+      "Integrate and manage relational and non-relational databases such as PostgreSQL, MySQL, MongoDB, or DynamoDB.",
+      "Mentor junior developers and conduct code reviews to ensure code quality and best practices.",
+      "Optimise application performance for maximum speed and scalability.",
+      "Collaborate with cross-functional teams, including designers, QA, and product managers.",
+    ],
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Postgresql",
+      "MongoDB",
+    ],
+    website: "https://www.linkedin.com/company/vervsocial/posts/?feedView=all",
+    featured: true,
+  },
+  {
+    id: 2,
+    type: "work",
+    company: "Shafi Consultancy Limited",
+    position: "Back End Developer",
+    location: "Remote",
+    period: "Jun 2023 - Dec 2024",
+    duration: "1 year 7 months",
+    description:
+      "I was responsible for",
+    achievements: [
+      "Design and develop scalable APIs using Python (Django DRF) and Node.js (Express) for data-driven applications.",
+      "Design and develop web applications for data visualization and project management using React, Node.js, and Python.",
+      "Write modular and reusable Python scripts for automation, data processing, and ETL tasks.",
+      "Develop secure authentication/authorization using JWT and session-based strategies with Node.js and Python.",
+      "Integrate APIs with PostgreSQL and MongoDB for dynamic data visualization dashboards.",
+      "Provide training and mentorship to other programmers.",
+      "Conduct training sessions on Python to enhance team skill sets.",
+      "Read and analyze client requirements for data transformations and statistical analysis.",
+      "Develop and validate programs in appropriate software to deliver outputs within agreed timelines and budget.",
+      "Update analysis dataset specifications based on client requirements.",
+      "Develop and improve statistical programming processes for efficiency and accuracy.",
+    ],
+    technologies: ["Django REST Framework", "Express.js", "Next.js", "Node.js", "React.js", "Git"],
+    website: "https://www.shaficonsultancy.com",
+    featured: false,
+  },
+  {
+    id: 3,
+    type: "work",
+    company: "StartupFlow",
+    position: "Junior Web Developer",
+    location: "Austin, TX",
+    period: "2019 - 2020",
+    duration: "1 year",
+    description:
+      "Started my professional journey in a fast-paced startup environment, learning to balance creativity with business needs while building scalable web solutions.",
+    achievements: [
+      "Developed and maintained 5 client websites with 99.9% uptime",
+      "Reduced page load times by 45% through code optimization",
+      "Contributed to open-source projects used by 1000+ developers",
+      "Participated in agile development processes and code reviews",
+    ],
+    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "WordPress"],
+    website: "https://startupflow.com",
+    featured: false,
+  },
+  {
+    id: 4,
+    type: "education",
+    company: "University of California, Berkeley",
+    position: "Bachelor of Science in Computer Science",
+    location: "Berkeley, CA",
+    period: "2015 - 2019",
+    duration: "4 years",
+    description:
+      "Focused on human-computer interaction and creative computing. Explored the intersection of technology and art through various projects and research.",
+    achievements: [
+      "Graduated Magna Cum Laude with 3.8 GPA",
+      "Led the Creative Computing Club with 200+ members",
+      "Published research on generative art algorithms",
+      "Won 'Best Innovation' at the annual hackathon",
+    ],
+    technologies: [
+      "Python",
+      "Java",
+      "C++",
+      "Machine Learning",
+      "Data Structures",
+      "Algorithms",
+    ],
+    website: "https://berkeley.edu",
+    featured: false,
+  },
+];
+
+export const skills = [
+  {
+    category: "Frontend",
+    items: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vue.js",
+      "Svelte",
+    ],
+  },
+  {
+    category: "Creative",
+    items: [
+      "Three.js",
+      "WebGL",
+      "D3.js",
+      "Framer Motion",
+      "GSAP",
+      "Canvas API",
+    ],
+  },
+  {
+    category: "Backend",
+    items: ["Node.js", "Python", "GraphQL", "PostgreSQL", "MongoDB", "Redis"],
+  },
+  {
+    category: "Tools",
+    items: ["Git", "Docker", "AWS", "Figma", "Blender", "Adobe Creative Suite"],
+  },
+];
+
+export const categories = [
+  { key: "all", label: "All Experience" },
+  { key: "work", label: "Work" },
+  { key: "education", label: "Education" },
+];

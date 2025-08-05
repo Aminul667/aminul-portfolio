@@ -2,7 +2,7 @@
 "use client";
 
 import type React from "react";
-import { Code, Palette, User, Mail, PenTool } from "lucide-react";
+import { Code, Palette, User, Mail, PenTool, Briefcase } from "lucide-react";
 import { useNavigation } from "@/context/NavigationContext";
 import { NavItem } from "./NavItem";
 
@@ -11,6 +11,12 @@ export const Navbar = () => {
 
   const navItems = [
     { id: "home", icon: Code, label: "Home", href: "/" },
+    {
+      id: "experience",
+      icon: Briefcase,
+      label: "Experience",
+      href: "/experience",
+    },
     { id: "work", icon: Palette, label: "Work", href: "/work" },
     { id: "about", icon: User, label: "About", href: "/about" },
     { id: "contact", icon: Mail, label: "Contact", href: "/contact" },
