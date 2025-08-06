@@ -1,4 +1,5 @@
 "use client";
+
 import ExperienceCard from "@/components/Pages/ExperienceCard";
 import AnimatedBackground from "@/components/Shared/Background/AnimatedBackground";
 import { Button } from "@/components/ui/button";
@@ -19,7 +20,7 @@ const ExperiencePage = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-stone-50 via-green-50/30 to-sage-50 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-stone-50 via-green-50/30 to-sage-50 relative overflow-hidden mt-10">
       {/* Animated Background Elements */}
       <AnimatedBackground />
 

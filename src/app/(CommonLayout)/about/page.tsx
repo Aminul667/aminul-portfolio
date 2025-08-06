@@ -83,7 +83,7 @@ const AboutPage = () => {
                 frontend experiences.
               </p>
               <div className="flex flex-wrap gap-2">
-                {["Node.js", "Python", "PostgreSQL", "GraphQL"].map((skill) => (
+                {["Node.js", "Python", "PostgreSQL", "MongoDB"].map((skill) => (
                   <span
                     key={skill}
                     className="px-3 py-1 bg-sage-100 text-sage-700 rounded-full text-sm"
@@ -103,7 +103,7 @@ const AboutPage = () => {
                 interactive experiences.
               </p>
               <div className="flex flex-wrap gap-2">
-                {["Three.js", "D3.js", "Framer Motion", "WebGL"].map(
+                {["Git", "GitHub", "VS Code"].map(
                   (skill) => (
                     <span
                       key={skill}
