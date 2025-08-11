@@ -103,7 +103,7 @@ const AboutPage = () => {
                 interactive experiences.
               </p>
               <div className="flex flex-wrap gap-2">
-                {["Git", "GitHub", "VS Code"].map(
+                {["Git", "GitHub", "VS Code", "Shadcn/UI"].map(
                   (skill) => (
                     <span
                       key={skill}

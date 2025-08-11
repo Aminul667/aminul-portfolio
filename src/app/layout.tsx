@@ -4,6 +4,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { NavigationProvider } from "@/context/NavigationContext";
 import { Navbar } from "@/components/Shared/Navbar/Navbar";
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased`}>
         <NavigationProvider>
           <Navbar />
+          <Toaster richColors position="top-center" />
           {children}
         </NavigationProvider>
       </body>
