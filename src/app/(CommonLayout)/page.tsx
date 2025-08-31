@@ -50,7 +50,7 @@ export default function Home() {
           <Link href="/work">
             <Button
               size="lg"
-              className="bg-sage-600 hover:bg-sage-700 text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 group"
+              className="bg-sage-600 hover:bg-sage-700 text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer"
             >
               Explore My Work
               <ChevronRight
@@ -307,7 +307,7 @@ export default function Home() {
           <Button
             variant="outline"
             size="lg"
-            className="border-sage-300 text-sage-700 hover:bg-sage-50 px-8 py-3 rounded-full font-medium group"
+            className="border-sage-300 text-sage-700 hover:bg-sage-50 px-8 py-3 rounded-full font-medium group cursor-pointer"
           >
             Read My Story
             <div className="ml-2 w-6 h-0.5 bg-sage-400 group-hover:w-8 transition-all duration-300"></div>
@@ -346,7 +346,7 @@ export default function Home() {
 
           <Button
             size="lg"
-            className="bg-sage-600 hover:bg-sage-700 text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 group"
+            className="bg-sage-600 hover:bg-sage-700 text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer"
           >
             Start a Conversation
           </Button>

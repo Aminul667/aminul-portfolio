@@ -5,6 +5,7 @@ import "./globals.css";
 import { NavigationProvider } from "@/context/NavigationContext";
 import { Navbar } from "@/components/Shared/Navbar/Navbar";
 import { Toaster } from "sonner";
+import Footer from "@/components/Shared/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({
@@ -37,6 +38,7 @@ export default function RootLayout({
           <Navbar />
           <Toaster richColors position="top-center" />
           {children}
+          <Footer />
         </NavigationProvider>
       </body>
     </html>
