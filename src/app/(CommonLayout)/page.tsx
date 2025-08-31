@@ -5,6 +5,7 @@ import {
   ChevronRight,
   ExternalLink,
   Github,
+  Globe,
   Linkedin,
   Mail,
 } from "lucide-react";
@@ -12,6 +13,9 @@ import Image from "next/image";
 import Link from "next/link";
 import profilePhoto from "../../assets/rahat.jpg";
 import AnimatedBackground from "@/components/Shared/Background/AnimatedBackground";
+import livanaImage from "../../assets/livana.png";
+import appFormImage from "../../assets/app-form.png";
+import ProjectLinks from "@/components/Pages/ProjectLinks";
 
 export default function Home() {
   return (
@@ -24,7 +28,9 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <h1 className="text-6xl md:text-8xl font-light text-stone-800 mb-4 tracking-tight">
-              <span className="font-serif italic text-sage-600">Md Aminul Islam</span> 
+              <span className="font-serif italic text-sage-600">
+                Md Aminul Islam
+              </span>
             </h1>
             <div className="h-1 w-24 bg-gradient-to-r from-sage-400 to-mint-400 mx-auto rounded-full mb-6"></div>
             <p className="text-xl md:text-2xl text-stone-600 font-light leading-relaxed">
@@ -103,11 +109,11 @@ export default function Home() {
             {/* Project 1 - Large Left */}
             <div className="grid md:grid-cols-3 gap-8 items-center">
               <div className="md:col-span-2">
-                <Card className="p-0 p-0 group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-1 bg-white/90 backdrop-blur-sm">
+                <Card className="p-0 group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-1 bg-white/90 backdrop-blur-sm">
                   <div className="relative overflow-hidden">
                     <Image
-                      src="https://plus.unsplash.com/premium_photo-1683288662019-c92caea8276d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt="Brand Identity Project"
+                      src={livanaImage}
+                      alt="Livana Real Estate project"
                       width={600}
                       height={300}
                       className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
@@ -126,24 +132,23 @@ export default function Home() {
               </div>
               <div className="space-y-4">
                 <h4 className="text-2xl font-serif text-slate-800">
-                  Sustainable Fashion Brand
+                  Livana – Smart Property Rental Platform
+                  <span className="ml-3 px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium">
+                    On-going
+                  </span>
                 </h4>
+                <ProjectLinks
+                  liveUrl="https://livana-client.vercel.app/"
+                  frontendUrl="https://github.com/Aminul667/livana-client"
+                  backendUrl="https://github.com/Aminul667/livana-server"
+                />
                 <p className="text-slate-600 leading-relaxed">
-                  Complete brand identity and digital experience for an
-                  eco-conscious fashion startup, focusing on authentic
-                  storytelling and sustainable values.
+                  Livana is a web application that streamlines property rentals.
+                  Landlords can list properties with details and photos, while
+                  tenants can explore, apply, and complete referencing easily.
+                  The platform also features secure payment tracking using
+                  stripe.
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-sage-100 text-sage-700 rounded-full text-sm font-medium">
-                    Branding
-                  </span>
-                  <span className="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium">
-                    Web Design
-                  </span>
-                  <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">
-                    Strategy
-                  </span>
-                </div>
               </div>
             </div>
 
@@ -151,30 +156,59 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-8 items-center">
               <div className="space-y-4 md:order-1">
                 <h4 className="text-2xl font-serif text-slate-800">
-                  Wellness App Interface
+                  App Form - NPM package for Reusable Form Component
                 </h4>
-                <p className="text-slate-600 leading-relaxed">
-                  Intuitive mobile app design for a mindfulness platform,
-                  emphasizing calm user experience and gentle interaction
-                  patterns.
-                </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-sage-100 text-sage-700 rounded-full text-sm font-medium">
-                    UI/UX
-                  </span>
-                  <span className="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium">
-                    Mobile
-                  </span>
-                  <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">
-                    Prototyping
-                  </span>
+                  <Button
+                    asChild
+                    variant="default"
+                    size="sm"
+                    className="gap-1.5 bg-black text-white hover:bg-white hover:text-black"
+                  >
+                    <a
+                      href="https://www.npmjs.com/package/app-form"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Globe className="h-3.5 w-3.5" />
+                      NPM link
+                      <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </Button>
+                  <Button
+                    asChild
+                    variant="outline"
+                    size="sm"
+                    className="gap-1.5 bg-transparent hover:bg-white"
+                  >
+                    <a
+                      href="https://github.com/Aminul667/app-form"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Github className="h-3.5 w-3.5" />
+                      Code
+                      <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </Button>
                 </div>
+                {/* <ProjectLinks
+                  liveUrl="https://livana-client.vercel.app/"
+                  frontendUrl="https://github.com/Aminul667/livana-client"
+                  backendUrl="https://github.com/Aminul667/livana-server"
+                /> */}
+                <p className="text-slate-600 leading-relaxed">
+                  A reusable form solution for React, built with React Hook
+                  Form, Zod, Tailwind CSS, and Shadcn UI. Includes CLI
+                  scaffolding for rapid form creation and consistent, validated
+                  UI components.
+                </p>
               </div>
               <div className="md:col-span-2 md:order-2">
                 <Card className="p-0 group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-1 bg-white/90 backdrop-blur-sm">
                   <div className="relative overflow-hidden">
                     <Image
-                      src="https://images.unsplash.com/photo-1525513688408-aef73a11a340?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      src={appFormImage}
                       alt="Wellness App"
                       width={600}
                       height={300}
@@ -251,7 +285,7 @@ export default function Home() {
               <Avatar className="w-full h-full">
                 <AvatarImage
                   src={profilePhoto.src}
-                  alt="Alex Chen"
+                  alt="Md Aminul Islam"
                   className="object-cover"
                 />
                 <AvatarFallback>AC</AvatarFallback>
@@ -295,9 +329,9 @@ export default function Home() {
 
           <div className="flex justify-center space-x-6 mb-8">
             {[
-              { icon: Github, href: "#", label: "GitHub" },
-              { icon: Linkedin, href: "#", label: "LinkedIn" },
-              { icon: Mail, href: "mailto:alex@example.com", label: "Email" },
+              { icon: Github, href: "https://github.com/Aminul667", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/md-aminul", label: "LinkedIn" },
+              { icon: Mail, href: "mailto:aminulrahat63@gmail.com", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}
