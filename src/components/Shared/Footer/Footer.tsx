@@ -12,12 +12,9 @@ const Footer = () => {
           <div className="max-w-6xl mx-auto px-6 py-6">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               {/* Copyright */}
-              <div className="flex items-center space-x-2 text-sm text-stone-600">
-                <span>© {currentYear} Alex Chen.</span>
-                <span>Made with</span>
-                <Heart size={14} className="text-red-400 fill-current" />
-                <span>and lots of coffee.</span>
-              </div>
+              <h3 className="text-stone-600">
+                © {currentYear} Md Aminul Islam
+              </h3>
             </div>
           </div>
         </div>

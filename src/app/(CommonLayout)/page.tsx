@@ -192,11 +192,6 @@ export default function Home() {
                     </a>
                   </Button>
                 </div>
-                {/* <ProjectLinks
-                  liveUrl="https://livana-client.vercel.app/"
-                  frontendUrl="https://github.com/Aminul667/livana-client"
-                  backendUrl="https://github.com/Aminul667/livana-server"
-                /> */}
                 <p className="text-slate-600 leading-relaxed">
                   A reusable form solution for React, built with React Hook
                   Form, Zod, Tailwind CSS, and Shadcn UI. Includes CLI
@@ -209,7 +204,7 @@ export default function Home() {
                   <div className="relative overflow-hidden">
                     <Image
                       src={appFormImage}
-                      alt="Wellness App"
+                      alt="App Form"
                       width={600}
                       height={300}
                       className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
