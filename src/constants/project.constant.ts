@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image";
 import livanaImage from "../assets/livana.png";
 import appFormImage from "../assets/app-form.png";
+import heartAttack from "../assets/heart-attack.png";
 
 export type TProject = {
   id: number;
@@ -41,5 +42,18 @@ export const projects: TProject[] = [
     liveLink: "https://livana-client.vercel.app",
     frontendLink: "https://github.com/Aminul667/livana-client",
     backendLink: "https://github.com/Aminul667/livana-server",
+  },
+  {
+    id: 3,
+    coverImage: heartAttack,
+    imageAlt: "ML Project: Heart attack prediction",
+    title: "ML Project: Heart attack prediction",
+    description:
+      "Developed a machine learning model to predict heart attack risk using patient health data, leveraging clinical features for improved early detection and healthcare decision support.",
+    isOngoing: false,
+    // liveLink: "https://github.com/Aminul667/heart_attack_prediction/blob/main/program/heart_attack_prediction.ipynb",
+    frontendLink: "https://github.com/Aminul667/heart_attack_prediction/blob/main/program/heart_attack_prediction.ipynb",
+    // liveText: "Code",
+    codeText: "Code",
   },
 ];

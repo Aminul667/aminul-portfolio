@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export type TArticleItem = {
   id: string;
   title: string;
@@ -6,5 +8,5 @@ export type TArticleItem = {
   category: string;
   tags: string[];
   featured: boolean;
-  image: string;
+  image: string | StaticImageData;
 };
