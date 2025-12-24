@@ -125,15 +125,18 @@ const AboutPage = () => {
               </div>
             </div>
           </div>
-
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-sage-300 text-sage-700 hover:bg-sage-50 px-8 py-3 rounded-full font-medium group bg-transparent cursor-pointer"
-          >
-            Download Resume
-            <ArrowRight size={24} />
-          </Button>
+          <div className="mx-auto w-max">
+            <a href="/cv_aminul.pdf" download>
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-sage-300 text-sage-700 hover:bg-sage-50 px-8 py-3 rounded-full font-medium group bg-transparent cursor-pointer flex items-center gap-2"
+              >
+                Download CV
+                <ArrowRight size={24} />
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
     </div>
