@@ -61,16 +61,21 @@ const AboutPage = () => {
                 modern CSS frameworks.
               </p>
               <div className="flex flex-wrap gap-2">
-                {["React", "Next.js", "TypeScript", "Tailwind CSS"].map(
-                  (skill) => (
-                    <span
-                      key={skill}
-                      className="px-3 py-1 bg-sage-100 text-sage-700 rounded-full text-sm"
-                    >
-                      {skill}
-                    </span>
-                  )
-                )}
+                {[
+                  "React",
+                  "Next.js",
+                  "TypeScript",
+                  "Tailwind CSS",
+                  "Vanila CSS",
+                  "Zustand",
+                ].map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-3 py-1 bg-sage-100 text-sage-700 rounded-full text-sm"
+                  >
+                    {skill}
+                  </span>
+                ))}
               </div>
             </div>
 
@@ -83,7 +88,13 @@ const AboutPage = () => {
                 frontend experiences.
               </p>
               <div className="flex flex-wrap gap-2">
-                {["Node.js", "Python", "PostgreSQL", "MongoDB"].map((skill) => (
+                {[
+                  "Node.js",
+                  "Express.js",
+                  "Python",
+                  "PostgreSQL",
+                  "MongoDB",
+                ].map((skill) => (
                   <span
                     key={skill}
                     className="px-3 py-1 bg-sage-100 text-sage-700 rounded-full text-sm"
@@ -103,16 +114,14 @@ const AboutPage = () => {
                 interactive experiences.
               </p>
               <div className="flex flex-wrap gap-2">
-                {["Git", "GitHub", "VS Code", "Shadcn/UI"].map(
-                  (skill) => (
-                    <span
-                      key={skill}
-                      className="px-3 py-1 bg-sage-100 text-sage-700 rounded-full text-sm"
-                    >
-                      {skill}
-                    </span>
-                  )
-                )}
+                {["Git", "GitHub", "Docker", "AWS", "VS Code"].map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-3 py-1 bg-sage-100 text-sage-700 rounded-full text-sm"
+                  >
+                    {skill}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
@@ -123,7 +132,7 @@ const AboutPage = () => {
             className="border-sage-300 text-sage-700 hover:bg-sage-50 px-8 py-3 rounded-full font-medium group bg-transparent cursor-pointer"
           >
             Download Resume
-            <ArrowRight size={24}/>
+            <ArrowRight size={24} />
           </Button>
         </div>
       </section>
